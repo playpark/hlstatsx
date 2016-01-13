@@ -1,4 +1,4 @@
-HLSTATSX:CE
+HLSTATSX:CE 1.7.0
 ---
 
 
