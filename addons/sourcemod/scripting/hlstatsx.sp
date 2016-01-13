@@ -216,7 +216,6 @@ public OnPluginStart()
 	
 	g_hCustomTags = CreateArray(SVTAGSIZE);
 	sv_tags = FindConVar("sv_tags");
-	g_iSDKVersion = GuessSDKVersion();
 	
 	if (g_bLateLoad)
 	{
@@ -1297,13 +1296,13 @@ public Action:hlx_sm_psay2(args)
 	new j = 0;
 	for (new i = 0; i < sizeof(client_message); i++)
 	{
-		new char = client_message[i];
-		if (char < 5 && char > 0)
+		new ichar = client_message[i];
+		if (ichar < 5 && ichar > 0)
 		{
 			continue;
 		}
 		buffer_message[j] = client_message[i];
-		if (char == 0)
+		if (ichar == 0)
 		{
 			break;
 		}
