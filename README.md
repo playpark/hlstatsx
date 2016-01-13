@@ -8,8 +8,11 @@ Updated hlstatsx:ce
 
 Todo:
 --
-- Get it to compile with latest SourceMod 1.7.x
 - Create a superlog file for csgo called superlogs-csgo.sp
+
+Changelog:
+---
+- Now working with SourceMod 1.7.0+
 
 Requirements:
 ---
