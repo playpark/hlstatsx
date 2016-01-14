@@ -30,7 +30,7 @@
 #include <cstrike>
 #include <clientprefs>
  
-#define VERSION "1.7.0"
+#define VERSION "1.6.21"
 #define HLXTAG "HLstatsX:CE"
 
 enum GameType {
