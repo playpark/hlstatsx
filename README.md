@@ -4,15 +4,16 @@ HLSTATSX:CE 1.7.0
 
 Description:
 --
-Updated hlstatsx:ce
+Updating hlstatsx:ce, CSGO is a priority but other games can be updated on demand for free. Send a message in the livesupport at www.playpark.nu and refer to this github, you find the chat window in the bottom right corner.
 
 Todo:
 --
-- Create a superlog file for csgo called superlogs-csgo.sp
+- Buggtest
 
 Changelog:
 ---
 - Now working with SourceMod 1.7.0+
+- Added superlogs for CSGO.
 
 Requirements:
 ---
