@@ -63,7 +63,7 @@ new bool:g_logktraj = false;
 
 public Plugin:myinfo = {
 	name = NAME,
-	author = "playpark",
+	author = "psychonic and playpark",
 	description = "Advanced logging for CSGO. Generates auxilary logging for use with log parsers such as HLstatsX and Psychostats",
 	version = VERSION,
 	url = "http://www.hlxcommunity.com"
@@ -93,7 +93,7 @@ public OnPluginStart()
 	HookConVarChange(g_cvar_locations, OnCvarLocationsChange);
 	HookConVarChange(g_cvar_ktraj, OnCvarKtrajChange);
 	
-	g_cvar_version = CreateConVar("superlogs_css_version", VERSION, NAME, FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY);
+	g_cvar_version = CreateConVar("superlogs_csgo_version", VERSION, NAME, FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY);
 		
 	hook_wstats();
 	hook_actions();
