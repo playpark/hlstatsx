@@ -53,7 +53,9 @@ dump_player_stats(client)
 	if (IsClientInGame(client) && IsClientConnected(client))
 	{
 		decl String: player_authid[64];
-		if (!GetClientAuthString(client, player_authid, sizeof(player_authid)))
+		new iD = GetClientAuthId(client, AuthId_Steam2, player_authid, sizeof(player_authid), false);
+		
+		if (!iD)
 		{
 			strcopy(player_authid, sizeof(player_authid), "UNKNOWN");
 		}
